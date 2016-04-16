@@ -1,0 +1,20 @@
+PODS:
+  - ChainableSwift (0.1.0)
+  - Nimble (3.2.0)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - ChainableSwift (from `../`)
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  ChainableSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ChainableSwift: cd4bf6ad9c483bfb4f467ba127ed2dc8422bcd2a
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+COCOAPODS: 0.39.0
