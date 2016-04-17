@@ -78,13 +78,6 @@ public extension UILabel {
     }
 
     /// ChainableSwift
-    final func userInteractionEnabled(userInteractionEnabled: Bool) -> UILabel {
-        self.userInteractionEnabled = userInteractionEnabled
-
-        return self
-    }
-
-    /// ChainableSwift
     final func numberOfLines(numberOfLines: Int) -> UILabel {
         self.numberOfLines = numberOfLines
 
