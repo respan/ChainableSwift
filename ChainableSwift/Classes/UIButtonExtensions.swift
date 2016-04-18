@@ -97,4 +97,11 @@ public extension UIButton {
 
         return self
     }
+
+    /// ChainableSwift
+    final func font(font: UIFont) -> UIButton {
+        self.titleLabel?.font = font
+
+        return self
+    }
 }
