@@ -120,3 +120,123 @@ public extension UILabel {
         return self
     }
 }
+
+public extension UILabel {
+    /// ChainableSwift
+    override func userInteractionEnabled(userInteractionEnabled: Bool) -> UILabel {
+        return super.userInteractionEnabled(userInteractionEnabled) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func tag(tag: Int) -> UILabel {
+        return super.tag(tag) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func clipsToBounds(clipsToBounds: Bool) -> UILabel {
+        return super.clipsToBounds(clipsToBounds) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func frame(frame: CGRect) -> UILabel {
+        return super.frame(frame) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func center(center: CGPoint) -> UILabel {
+        return super.center(center) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func transform(transform: CGAffineTransform) -> UILabel {
+        return super.transform(transform) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func contentScaleFactor(contentScaleFactor: CGFloat) -> UILabel {
+        return super.contentScaleFactor(contentScaleFactor) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func multipleTouchEnabled(multipleTouchEnabled: Bool) -> UILabel {
+        return super.multipleTouchEnabled(multipleTouchEnabled) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func exclusiveTouch(exclusiveTouch: Bool) -> UILabel {
+        return super.exclusiveTouch(exclusiveTouch) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func autoresizesSubviews(autoresizesSubviews: Bool) -> UILabel {
+        return super.autoresizesSubviews(autoresizesSubviews) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func autoresizingMask(autoresizingMask: UIViewAutoresizing) -> UILabel {
+        return super.autoresizingMask(autoresizingMask) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func backgroundColor(backgroundColor: UIColor?) -> UILabel {
+        return super.backgroundColor(backgroundColor) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func alpha(alpha: CGFloat) -> UILabel {
+        return super.alpha(alpha) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func opaque(opaque: Bool) -> UILabel {
+        return super.opaque(opaque) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func clearsContextBeforeDrawing(clearsContextBeforeDrawing: Bool) -> UILabel {
+        return super.clearsContextBeforeDrawing(clearsContextBeforeDrawing) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func hidden(hidden: Bool) -> UILabel {
+        return super.hidden(hidden) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func contentMode(contentMode: UIViewContentMode) -> UILabel {
+        return super.contentMode(contentMode) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func maskView(maskView: UIView?) -> UILabel {
+        return super.maskView(maskView) as! UILabel
+    }
+
+    /// ChainableSwift
+    @available(iOS 7.0, *)
+    override func tintColor(tintColor: UIColor) -> UILabel {
+        return super.tintColor(tintColor) as! UILabel
+    }
+
+    /// ChainableSwift
+    @available(iOS 7.0, *)
+    override func tintAdjustmentMode(tintAdjustmentMode: UIViewTintAdjustmentMode) -> UILabel {
+        return super.tintAdjustmentMode(tintAdjustmentMode) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func gestureRecognizers(gestureRecognizers: [UIGestureRecognizer]?) -> UILabel {
+        return super.gestureRecognizers(gestureRecognizers) as! UILabel
+    }
+
+    /// ChainableSwift
+    @available(iOS 7.0, *)
+    override func motionEffects(motionEffects: [UIMotionEffect]) -> UILabel {
+        return super.motionEffects(motionEffects) as! UILabel
+    }
+
+    /// ChainableSwift
+    override func translatesAutoresizingMaskIntoConstraints(translatesAutoresizingMaskIntoConstraints: Bool) -> UILabel {
+        return super.translatesAutoresizingMaskIntoConstraints(translatesAutoresizingMaskIntoConstraints) as! UILabel
+    }
+}
