@@ -105,35 +105,3 @@ public extension UIButton {
         return self
     }
 }
-
-extension UIButton {
-    /// ChainableSwift
-    final override func enabled(enabled: Bool) -> UIButton {
-        return super.enabled(enabled) as! UIButton
-    }
-
-    /// ChainableSwift
-    final override func selected(selected: Bool) -> UIButton {
-        return super.selected(selected) as! UIButton
-    }
-
-    /// ChainableSwift
-    final override func highlighted(highlighted: Bool) -> UIButton {
-        return super.highlighted(highlighted) as! UIButton
-    }
-
-    /// ChainableSwift
-    final override func contentVerticalAlignment(contentVerticalAlignment: UIControlContentVerticalAlignment) -> UIButton {
-        return super.contentVerticalAlignment(contentVerticalAlignment) as! UIButton
-    }
-
-    /// ChainableSwift
-    final override func contentHorizontalAlignment(contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> UIButton {
-        return super.contentHorizontalAlignment(contentHorizontalAlignment) as! UIButton
-    }
-
-    /// ChainableSwift
-    final override func target(target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents) -> UIButton {
-        return super.target(target, action: action, forControlEvents: controlEvents) as! UIButton
-    }
-}
