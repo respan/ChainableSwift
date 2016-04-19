@@ -1,4 +1,4 @@
-# ChainableSwift
+# ChainableSwift 🔗
 
 [![Version](https://img.shields.io/cocoapods/v/ChainableSwift.svg?style=flat)](http://cocoapods.org/pods/ChainableSwift)
 [![License](https://img.shields.io/cocoapods/l/ChainableSwift.svg?style=flat)](http://cocoapods.org/pods/ChainableSwift)
