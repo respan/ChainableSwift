@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         view.addSubview(label)
 
         label.autoCenterInSuperview()
+        label.autoSetDimensionsToSize(CGSize(width: 200, height: 50))
     }
 
     override func didReceiveMemoryWarning() {

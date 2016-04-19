@@ -4,11 +4,11 @@
 [![License](https://img.shields.io/cocoapods/l/ChainableSwift.svg?style=flat)](http://cocoapods.org/pods/ChainableSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ChainableSwift.svg?style=flat)](http://cocoapods.org/pods/ChainableSwift)
 
-Work in progress.
+Work in progress 🙄
 
-## Why
+## Why?
 
-Because it's easier to write this:
+Because you can write this:
 
 ```swift
 let label = UILabel()
@@ -21,7 +21,7 @@ let label = UILabel()
                 .clipsToBounds(true)
 ```
 
-than this:
+instead of this:
 
 ```swift
 let label = UILabel()
@@ -33,6 +33,35 @@ label.textAlignment = .Center
 label.font = .boldSystemFontOfSize(17)
 label.layer.cornerRadius = 2
 label.clipsToBounds = true
+```
+
+The awesome thing is, you can thin your `viewDidLoad` or `init` methods:
+
+```swift
+class MyIntroView: UIView {
+    let coverView = UIView().backgroundColor(.redColor())
+    
+    let titleLabel = UILabel().font(.boldSystemFontOfSize(17))
+    let subTitleLabel = UILabel().font(.systemFontOfSize(12)).textColor(.grayColor())
+
+    init() {
+        super.init(frame: CGRect.zero)
+
+        addSubview(coverView)
+        coverView.addSubview(titleLabel)
+        coverView.addSubview(subTitleLabel)
+        // ...
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    func configure(title: String, subtitle: String?) {
+        titleLabel.text = title
+        subTitleLabel.text = subtitle
+    }
+}
 ```
 
 ## Usage
