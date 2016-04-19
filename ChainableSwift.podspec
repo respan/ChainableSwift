@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = "ChainableSwift"
   s.version          = "0.3.1"
   s.summary          = "Chainable standart library 🔗"
-  s.description      = "Easy to write chainable Swift. UILabel, UIView, String, etc. Work in progress."
+  s.description      = "Easy to write and read chains of methods for UIView, UILabel, UIControl, UIButton, NSAttributedString, CALayer, etc. Work in progress."
 
   s.homepage         = "https://github.com/respan/ChainableSwift"
   s.license          = 'MIT'
