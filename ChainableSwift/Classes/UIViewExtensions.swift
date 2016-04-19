@@ -169,7 +169,7 @@ public extension UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
     /// ChainableSwift
     final func layerBounds(bounds: CGRect) -> Self {
         self.layer.bounds = bounds

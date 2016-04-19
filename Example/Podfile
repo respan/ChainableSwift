@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'ChainableSwift_Example', :exclusive => true do
   pod 'ChainableSwift', :path => '../'
+
+  pod 'PureLayout'
 end
 
 target 'ChainableSwift_Tests', :exclusive => true do

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ChainableSwift"
-  s.version          = "0.3.0"
+  s.version          = "0.3.1"
   s.summary          = "Easy to write chainable Swift"
   s.description      = "Easy to write chainable Swift. UILabel, UIView, String, etc. Work in progress."
 

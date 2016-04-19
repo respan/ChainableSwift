@@ -6,6 +6,35 @@
 
 Work in progress.
 
+## Why
+
+Because it's easier to write this:
+
+```swift
+let label = UILabel()
+                .text("My awesome title")
+                .textColor(.whiteColor())
+                .backgroundColor(.blackColor())
+                .textAlignment(.Center)
+                .font(.boldSystemFontOfSize(17))
+                .layerCornerRadius(2)
+                .clipsToBounds(true)
+```
+
+than this:
+
+```swift
+let label = UILabel()
+
+label.text = "My awesome title"
+label.textColor = .whiteColor()
+label.backgroundColor = .blackColor()
+label.textAlignment = .Center
+label.font = .boldSystemFontOfSize(17)
+label.layer.cornerRadius = 2
+label.clipsToBounds = true
+```
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -18,6 +47,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ChainableSwift"
 ```
+
+Then run `pod install` command.
 
 ## Author
 
