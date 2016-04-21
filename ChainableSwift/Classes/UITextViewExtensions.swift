@@ -118,4 +118,60 @@ public extension UITextView {
         
         return self
     }
+
+    /// ChainableSwift
+    final func autocapitalizationType(autocapitalizationType: UITextAutocapitalizationType) -> Self {
+        self.autocapitalizationType = autocapitalizationType
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func autocorrectionType(autocorrectionType: UITextAutocorrectionType) -> Self {
+        self.autocorrectionType = autocorrectionType
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func spellCheckingType(spellCheckingType: UITextSpellCheckingType) -> Self {
+        self.spellCheckingType = spellCheckingType
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func keyboardType(keyboardType: UIKeyboardType) -> Self {
+        self.keyboardType = keyboardType
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func keyboardAppearance(keyboardAppearance: UIKeyboardAppearance) -> Self {
+        self.keyboardAppearance = keyboardAppearance
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func returnKeyType(returnKeyType: UIReturnKeyType) -> Self {
+        self.returnKeyType = returnKeyType
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func enablesReturnKeyAutomatically(enablesReturnKeyAutomatically: Bool) -> Self {
+        self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
+
+        return self
+    }
+
+    /// ChainableSwift
+    final func secureTextEntry(secureTextEntry: Bool) -> Self {
+        self.secureTextEntry = secureTextEntry
+
+        return self
+    }
 }
