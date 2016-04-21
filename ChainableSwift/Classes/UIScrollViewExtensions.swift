@@ -8,13 +8,6 @@
 
 public extension UIScrollView {
     /// ChainableSwift
-    final func delegate(delegate: UIScrollViewDelegate?) -> Self {
-        self.delegate = delegate
-
-        return self
-    }
-
-    /// ChainableSwift
     final func contentOffset(contentOffset: CGPoint) -> Self {
         self.contentOffset = contentOffset
 
