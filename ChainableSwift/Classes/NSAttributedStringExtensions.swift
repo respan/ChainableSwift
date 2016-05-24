@@ -36,7 +36,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSForegroundColorAttributeName, value: backgroundColor)
+        return copy.addAttributeToWholeString(NSBackgroundColorAttributeName, value: backgroundColor)
     }
 
     final func kern(kern: CGFloat) -> NSAttributedString {
