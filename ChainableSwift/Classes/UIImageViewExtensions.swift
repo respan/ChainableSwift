@@ -1,5 +1,5 @@
 //
-//  UIImageExtensions.swift
+//  UIImageviewExtensions.swift
 //  Pods
 //
 //  Created by Denis Sushko on 25.05.16.
