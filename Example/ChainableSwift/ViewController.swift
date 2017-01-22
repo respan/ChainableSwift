@@ -18,17 +18,17 @@ class ViewController: UIViewController {
 
         let label = UILabel()
                         .text("My awesome title")
-                        .textColor(.whiteColor())
-                        .backgroundColor(.blackColor())
-                        .textAlignment(.Center)
-                        .font(.boldSystemFontOfSize(17))
+                        .textColor(.white)
+                        .backgroundColor(.black)
+                        .textAlignment(.center)
+                        .font(.boldSystemFont(ofSize: 17))
                         .layerCornerRadius(2)
                         .clipsToBounds(true)
 
         view.addSubview(label)
 
         label.autoCenterInSuperview()
-        label.autoSetDimensionsToSize(CGSize(width: 200, height: 50))
+        label.autoSetDimensions(to: CGSize(width: 200, height: 50))
     }
 
     override func didReceiveMemoryWarning() {

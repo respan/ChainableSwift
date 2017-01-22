@@ -8,43 +8,43 @@
 
 public extension UIControl {
     /// ChainableSwift
-    func enabled(enabled: Bool) -> Self {
-        self.enabled = enabled
+    func enabled(_ enabled: Bool) -> Self {
+        self.isEnabled = enabled
 
         return self
     }
 
     /// ChainableSwift
-    func selected(selected: Bool) -> Self {
-        self.selected = selected
+    func selected(_ selected: Bool) -> Self {
+        self.isSelected = selected
 
         return self
     }
 
     /// ChainableSwift
-    func highlighted(highlighted: Bool) -> Self {
-        self.highlighted = highlighted
+    func highlighted(_ highlighted: Bool) -> Self {
+        self.isHighlighted = highlighted
 
         return self
     }
 
     /// ChainableSwift
-    func contentVerticalAlignment(contentVerticalAlignment: UIControlContentVerticalAlignment) -> Self {
+    func contentVerticalAlignment(_ contentVerticalAlignment: UIControlContentVerticalAlignment) -> Self {
         self.contentVerticalAlignment = contentVerticalAlignment
 
         return self
     }
 
     /// ChainableSwift
-    func contentHorizontalAlignment(contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> Self {
+    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> Self {
         self.contentHorizontalAlignment = contentHorizontalAlignment
 
         return self
     }
 
     /// ChainableSwift
-    func target(target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents) -> Self {
-        self.addTarget(target, action: action, forControlEvents: controlEvents)
+    func target(_ target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents) -> Self {
+        self.addTarget(target, action: action, for: controlEvents)
 
         return self
     }

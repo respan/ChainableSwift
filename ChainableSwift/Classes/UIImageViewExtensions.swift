@@ -10,49 +10,49 @@ import Foundation
 
 public extension UIImageView {
     /// ChainableSwift
-    final func image(image: UIImage?) -> Self {
+    final func image(_ image: UIImage?) -> Self {
         self.image = image
 
         return self
     }
 
     /// ChainableSwift
-    final func highlightedImage(highlightedImage: UIImage?) -> Self {
+    final func highlightedImage(_ highlightedImage: UIImage?) -> Self {
         self.highlightedImage = highlightedImage
 
         return self
     }
 
     /// ChainableSwift
-    final func highlighted(highlighted: Bool) -> Self {
-        self.highlighted = highlighted
+    final func highlighted(_ highlighted: Bool) -> Self {
+        self.isHighlighted = highlighted
 
         return self
     }
 
     /// ChainableSwift
-    final func animationImages(animationImages: [UIImage]?) -> Self {
+    final func animationImages(_ animationImages: [UIImage]?) -> Self {
         self.animationImages = animationImages
 
         return self
     }
 
     /// ChainableSwift
-    final func highlightedAnimationImages(highlightedAnimationImages: [UIImage]?) -> Self {
+    final func highlightedAnimationImages(_ highlightedAnimationImages: [UIImage]?) -> Self {
         self.highlightedAnimationImages = highlightedAnimationImages
 
         return self
     }
 
     /// ChainableSwift
-    final func animationDuration(animationDuration: NSTimeInterval) -> Self {
+    final func animationDuration(_ animationDuration: TimeInterval) -> Self {
         self.animationDuration = animationDuration
 
         return self
     }
 
     /// ChainableSwift
-    final func animationRepeatCount(animationRepeatCount: Int) -> Self {
+    final func animationRepeatCount(_ animationRepeatCount: Int) -> Self {
         self.animationRepeatCount = animationRepeatCount
 
         return self

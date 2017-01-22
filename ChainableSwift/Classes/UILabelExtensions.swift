@@ -8,98 +8,98 @@
 
 public extension UILabel {
     /// ChainableSwift
-    final func text(text: String?) -> Self {
+    final func text(_ text: String?) -> Self {
         self.text = text
 
         return self
     }
 
     /// ChainableSwift
-    final func font(font: UIFont) -> Self {
+    final func font(_ font: UIFont) -> Self {
         self.font = font
 
         return self
     }
 
     /// ChainableSwift
-    final func textColor(textColor: UIColor) -> Self {
+    final func textColor(_ textColor: UIColor) -> Self {
         self.textColor = textColor
 
         return self
     }
 
     /// ChainableSwift
-    final func shadowColor(shadowColor: UIColor?) -> Self {
+    final func shadowColor(_ shadowColor: UIColor?) -> Self {
         self.shadowColor = shadowColor
 
         return self
     }
 
     /// ChainableSwift
-    final func shadowOffset(shadowOffset: CGSize) -> Self {
+    final func shadowOffset(_ shadowOffset: CGSize) -> Self {
         self.shadowOffset = shadowOffset
 
         return self
     }
 
     /// ChainableSwift
-    final func textAlignment(textAlignment: NSTextAlignment) -> Self {
+    final func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
 
         return self
     }
 
     /// ChainableSwift
-    final func lineBreakMode(lineBreakMode: NSLineBreakMode) -> Self {
+    final func lineBreakMode(_ lineBreakMode: NSLineBreakMode) -> Self {
         self.lineBreakMode = lineBreakMode
 
         return self
     }
 
     /// ChainableSwift
-    final func attributedText(attributedText: NSAttributedString?) -> Self {
+    final func attributedText(_ attributedText: NSAttributedString?) -> Self {
         self.attributedText = attributedText
 
         return self
     }
 
     /// ChainableSwift
-    final func highlightedTextColor(highlightedTextColor: UIColor?) -> Self {
+    final func highlightedTextColor(_ highlightedTextColor: UIColor?) -> Self {
         self.highlightedTextColor = highlightedTextColor
 
         return self
     }
 
     /// ChainableSwift
-    final func highlighted(highlighted: Bool) -> Self {
-        self.highlighted = highlighted
+    final func highlighted(_ highlighted: Bool) -> Self {
+        self.isHighlighted = highlighted
 
         return self
     }
 
     /// ChainableSwift
-    final func numberOfLines(numberOfLines: Int) -> Self {
+    final func numberOfLines(_ numberOfLines: Int) -> Self {
         self.numberOfLines = numberOfLines
 
         return self
     }
 
     /// ChainableSwift
-    final func adjustsFontSizeToFitWidth(adjustsFontSizeToFitWidth: Bool) -> Self {
+    final func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Self {
         self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
 
         return self
     }
 
     /// ChainableSwift
-    final func baselineAdjustment(baselineAdjustment: UIBaselineAdjustment) -> Self {
+    final func baselineAdjustment(_ baselineAdjustment: UIBaselineAdjustment) -> Self {
         self.baselineAdjustment = baselineAdjustment
 
         return self
     }
 
     /// ChainableSwift
-    final func minimumScaleFactor(minimumScaleFactor: CGFloat) -> Self {
+    final func minimumScaleFactor(_ minimumScaleFactor: CGFloat) -> Self {
         self.minimumScaleFactor = minimumScaleFactor
 
         return self
@@ -107,14 +107,14 @@ public extension UILabel {
 
     /// ChainableSwift
     @available(iOS 9.0, *)
-    final func allowsDefaultTighteningForTruncation(allowsDefaultTighteningForTruncation: Bool) -> Self {
+    final func allowsDefaultTighteningForTruncation(_ allowsDefaultTighteningForTruncation: Bool) -> Self {
         self.allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation
 
         return self
     }
 
     /// ChainableSwift
-    final func preferredMaxLayoutWidth(preferredMaxLayoutWidth: CGFloat) -> Self {
+    final func preferredMaxLayoutWidth(_ preferredMaxLayoutWidth: CGFloat) -> Self {
         self.preferredMaxLayoutWidth = preferredMaxLayoutWidth
         
         return self

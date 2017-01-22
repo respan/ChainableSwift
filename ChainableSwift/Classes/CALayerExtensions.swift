@@ -8,196 +8,196 @@
 
 public extension CALayer {
     /// ChainableSwift
-    final func bounds(bounds: CGRect) -> Self {
+    final func bounds(_ bounds: CGRect) -> Self {
         self.bounds = bounds
 
         return self
     }
 
     /// ChainableSwift
-    final func position(position: CGPoint) -> Self {
+    final func position(_ position: CGPoint) -> Self {
         self.position = position
 
         return self
     }
 
     /// ChainableSwift
-    final func zPosition(zPosition: CGFloat) -> Self {
+    final func zPosition(_ zPosition: CGFloat) -> Self {
         self.zPosition = zPosition
 
         return self
     }
 
     /// ChainableSwift
-    final func anchorPoint(anchorPoint: CGPoint) -> Self {
+    final func anchorPoint(_ anchorPoint: CGPoint) -> Self {
         self.anchorPoint = anchorPoint
 
         return self
     }
 
     /// ChainableSwift
-    final func anchorPointZ(anchorPointZ: CGFloat) -> Self {
+    final func anchorPointZ(_ anchorPointZ: CGFloat) -> Self {
         self.anchorPointZ = anchorPointZ
 
         return self
     }
 
     /// ChainableSwift
-    final func transform(transform: CATransform3D) -> Self {
+    final func transform(_ transform: CATransform3D) -> Self {
         self.transform = transform
         
         return self
     }
 
     /// ChainableSwift
-    final func frame(frame: CGRect) -> Self {
+    final func frame(_ frame: CGRect) -> Self {
         self.frame = frame
 
         return self
     }
 
     /// ChainableSwift
-    final func hidden(hidden: Bool) -> Self {
-        self.hidden = hidden
+    final func hidden(_ hidden: Bool) -> Self {
+        self.isHidden = hidden
 
         return self
     }
 
     /// ChainableSwift
-    final func doubleSided(doubleSided: Bool) -> Self {
-        self.doubleSided = doubleSided
+    final func doubleSided(_ doubleSided: Bool) -> Self {
+        self.isDoubleSided = doubleSided
 
         return self
     }
 
     /// ChainableSwift
-    final func geometryFlipped(geometryFlipped: Bool) -> Self {
-        self.geometryFlipped = geometryFlipped
+    final func geometryFlipped(_ geometryFlipped: Bool) -> Self {
+        self.isGeometryFlipped = geometryFlipped
 
         return self
     }
 
     /// ChainableSwift
-    final func mask(mask: CALayer?) -> Self {
+    final func mask(_ mask: CALayer?) -> Self {
         self.mask = mask
 
         return self
     }
 
     /// ChainableSwift
-    final func masksToBounds(masksToBounds: Bool) -> Self {
+    final func masksToBounds(_ masksToBounds: Bool) -> Self {
         self.masksToBounds = masksToBounds
 
         return self
     }
 
     /// ChainableSwift
-    final func opaque(opaque: Bool) -> Self {
-        self.opaque = opaque
+    final func opaque(_ opaque: Bool) -> Self {
+        self.isOpaque = opaque
 
         return self
     }
 
     /// ChainableSwift
-    final func allowsEdgeAntialiasing(allowsEdgeAntialiasing: Bool) -> Self {
+    final func allowsEdgeAntialiasing(_ allowsEdgeAntialiasing: Bool) -> Self {
         self.allowsEdgeAntialiasing = allowsEdgeAntialiasing
 
         return self
     }
 
     /// ChainableSwift
-    final func backgroundColor(backgroundColor: CGColor?) -> Self {
+    final func backgroundColor(_ backgroundColor: CGColor?) -> Self {
         self.backgroundColor = backgroundColor
 
         return self
     }
 
     /// ChainableSwift
-    final func cornerRadius(cornerRadius: CGFloat) -> Self {
+    final func cornerRadius(_ cornerRadius: CGFloat) -> Self {
         self.cornerRadius = cornerRadius
 
         return self
     }
 
     /// ChainableSwift
-    final func borderWidth(borderWidth: CGFloat) -> Self {
+    final func borderWidth(_ borderWidth: CGFloat) -> Self {
         self.borderWidth = borderWidth
 
         return self
     }
 
     /// ChainableSwift
-    final func borderColor(borderColor: CGColor?) -> Self {
+    final func borderColor(_ borderColor: CGColor?) -> Self {
         self.borderColor = borderColor
 
         return self
     }
 
     /// ChainableSwift
-    final func opacity(opacity: Float) -> Self {
+    final func opacity(_ opacity: Float) -> Self {
         self.opacity = opacity
 
         return self
     }
 
     /// ChainableSwift
-    final func allowsGroupOpacity(allowsGroupOpacity: Bool) -> Self {
+    final func allowsGroupOpacity(_ allowsGroupOpacity: Bool) -> Self {
         self.allowsGroupOpacity = allowsGroupOpacity
 
         return self
     }
 
     /// ChainableSwift
-    final func compositingFilter(compositingFilter: AnyObject?) -> Self {
+    final func compositingFilter(_ compositingFilter: AnyObject?) -> Self {
         self.compositingFilter = compositingFilter
 
         return self
     }
 
     /// ChainableSwift
-    final func shouldRasterize(shouldRasterize: Bool) -> Self {
+    final func shouldRasterize(_ shouldRasterize: Bool) -> Self {
         self.shouldRasterize = shouldRasterize
 
         return self
     }
 
     /// ChainableSwift
-    final func rasterizationScale(rasterizationScale: CGFloat) -> Self {
+    final func rasterizationScale(_ rasterizationScale: CGFloat) -> Self {
         self.rasterizationScale = rasterizationScale
 
         return self
     }
 
     /// ChainableSwift
-    final func shadowColor(shadowColor: CGColor?) -> Self {
+    final func shadowColor(_ shadowColor: CGColor?) -> Self {
         self.shadowColor = shadowColor
 
         return self
     }
     
     /// ChainableSwift
-    final func shadowOpacity(shadowOpacity: Float) -> Self {
+    final func shadowOpacity(_ shadowOpacity: Float) -> Self {
         self.shadowOpacity = shadowOpacity
         
         return self
     }
     
     /// ChainableSwift
-    final func shadowOffset(shadowOffset: CGSize) -> Self {
+    final func shadowOffset(_ shadowOffset: CGSize) -> Self {
         self.shadowOffset = shadowOffset
         
         return self
     }
     
     /// ChainableSwift
-    final func shadowRadius(shadowRadius: CGFloat) -> Self {
+    final func shadowRadius(_ shadowRadius: CGFloat) -> Self {
         self.shadowRadius = shadowRadius
         
         return self
     }
     
     /// ChainableSwift
-    final func shadowPath(shadowPath: CGPath?) -> Self {
+    final func shadowPath(_ shadowPath: CGPath?) -> Self {
         self.shadowPath = shadowPath
         
         return self
