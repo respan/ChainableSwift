@@ -8,154 +8,154 @@
 
 public extension UIScrollView {
     /// ChainableSwift
-    final func contentOffset(contentOffset: CGPoint) -> Self {
+    final func contentOffset(_ contentOffset: CGPoint) -> Self {
         self.contentOffset = contentOffset
 
         return self
     }
 
     /// ChainableSwift
-    final func contentSize(contentSize: CGSize) -> Self {
+    final func contentSize(_ contentSize: CGSize) -> Self {
         self.contentSize = contentSize
 
         return self
     }
 
     /// ChainableSwift
-    final func contentInset(contentInset: UIEdgeInsets) -> Self {
+    final func contentInset(_ contentInset: UIEdgeInsets) -> Self {
         self.contentInset = contentInset
 
         return self
     }
 
     /// ChainableSwift
-    final func directionalLockEnabled(directionalLockEnabled: Bool) -> Self {
-        self.directionalLockEnabled = directionalLockEnabled
+    final func directionalLockEnabled(_ directionalLockEnabled: Bool) -> Self {
+        self.isDirectionalLockEnabled = directionalLockEnabled
 
         return self
     }
 
     /// ChainableSwift
-    final func bounces(bounces: Bool) -> Self {
+    final func bounces(_ bounces: Bool) -> Self {
         self.bounces = bounces
 
         return self
     }
 
     /// ChainableSwift
-    final func alwaysBounceVertical(alwaysBounceVertical: Bool) -> Self {
+    final func alwaysBounceVertical(_ alwaysBounceVertical: Bool) -> Self {
         self.alwaysBounceVertical = alwaysBounceVertical
 
         return self
     }
 
     /// ChainableSwift
-    final func alwaysBounceHorizontal(alwaysBounceHorizontal: Bool) -> Self {
+    final func alwaysBounceHorizontal(_ alwaysBounceHorizontal: Bool) -> Self {
         self.alwaysBounceHorizontal = alwaysBounceHorizontal
 
         return self
     }
 
     /// ChainableSwift
-    final func pagingEnabled(pagingEnabled: Bool) -> Self {
-        self.pagingEnabled = pagingEnabled
+    final func pagingEnabled(_ pagingEnabled: Bool) -> Self {
+        self.isPagingEnabled = pagingEnabled
 
         return self
     }
 
     /// ChainableSwift
-    final func scrollEnabled(scrollEnabled: Bool) -> Self {
-        self.scrollEnabled = scrollEnabled
+    final func scrollEnabled(_ scrollEnabled: Bool) -> Self {
+        self.isScrollEnabled = scrollEnabled
 
         return self
     }
 
     /// ChainableSwift
-    final func showsHorizontalScrollIndicator(showsHorizontalScrollIndicator: Bool) -> Self {
+    final func showsHorizontalScrollIndicator(_ showsHorizontalScrollIndicator: Bool) -> Self {
         self.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator
 
         return self
     }
 
     /// ChainableSwift
-    final func showsVerticalScrollIndicator(showsVerticalScrollIndicator: Bool) -> Self {
+    final func showsVerticalScrollIndicator(_ showsVerticalScrollIndicator: Bool) -> Self {
         self.showsVerticalScrollIndicator = showsVerticalScrollIndicator
 
         return self
     }
 
     /// ChainableSwift
-    final func scrollIndicatorInsets(scrollIndicatorInsets: UIEdgeInsets) -> Self {
+    final func scrollIndicatorInsets(_ scrollIndicatorInsets: UIEdgeInsets) -> Self {
         self.scrollIndicatorInsets = scrollIndicatorInsets
 
         return self
     }
 
     /// ChainableSwift
-    final func indicatorStyle(indicatorStyle: UIScrollViewIndicatorStyle) -> Self {
+    final func indicatorStyle(_ indicatorStyle: UIScrollViewIndicatorStyle) -> Self {
         self.indicatorStyle = indicatorStyle
 
         return self
     }
 
     /// ChainableSwift
-    final func decelerationRate(decelerationRate: CGFloat) -> Self {
+    final func decelerationRate(_ decelerationRate: CGFloat) -> Self {
         self.decelerationRate = decelerationRate
 
         return self
     }
 
     /// ChainableSwift
-    final func delaysContentTouches(delaysContentTouches: Bool) -> Self {
+    final func delaysContentTouches(_ delaysContentTouches: Bool) -> Self {
         self.delaysContentTouches = delaysContentTouches
 
         return self
     }
 
     /// ChainableSwift
-    final func canCancelContentTouches(canCancelContentTouches: Bool) -> Self {
+    final func canCancelContentTouches(_ canCancelContentTouches: Bool) -> Self {
         self.canCancelContentTouches = canCancelContentTouches
 
         return self
     }
 
     /// ChainableSwift
-    final func minimumZoomScale(minimumZoomScale: CGFloat) -> Self {
+    final func minimumZoomScale(_ minimumZoomScale: CGFloat) -> Self {
         self.minimumZoomScale = minimumZoomScale
 
         return self
     }
 
     /// ChainableSwift
-    final func maximumZoomScale(maximumZoomScale: CGFloat) -> Self {
+    final func maximumZoomScale(_ maximumZoomScale: CGFloat) -> Self {
         self.maximumZoomScale = maximumZoomScale
 
         return self
     }
 
     /// ChainableSwift
-    final func zoomScale(zoomScale: CGFloat) -> Self {
+    final func zoomScale(_ zoomScale: CGFloat) -> Self {
         self.zoomScale = zoomScale
 
         return self
     }
 
     /// ChainableSwift
-    final func bouncesZoom(bouncesZoom: Bool) -> Self {
+    final func bouncesZoom(_ bouncesZoom: Bool) -> Self {
         self.bouncesZoom = bouncesZoom
 
         return self
     }
 
     /// ChainableSwift
-    final func scrollsToTop(scrollsToTop: Bool) -> Self {
+    final func scrollsToTop(_ scrollsToTop: Bool) -> Self {
         self.scrollsToTop = scrollsToTop
 
         return self
     }
 
     /// ChainableSwift
-    final func keyboardDismissMode(keyboardDismissMode: UIScrollViewKeyboardDismissMode) -> Self {
+    final func keyboardDismissMode(_ keyboardDismissMode: UIScrollViewKeyboardDismissMode) -> Self {
         self.keyboardDismissMode = keyboardDismissMode
 
         return self

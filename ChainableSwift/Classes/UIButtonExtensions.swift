@@ -8,98 +8,98 @@
 
 public extension UIButton {
     /// ChainableSwift
-    final func contentEdgeInsets(contentEdgeInsets: UIEdgeInsets) -> Self {
+    final func contentEdgeInsets(_ contentEdgeInsets: UIEdgeInsets) -> Self {
         self.contentEdgeInsets = contentEdgeInsets
 
         return self
     }
 
     /// ChainableSwift
-    final func titleEdgeInsets(titleEdgeInsets: UIEdgeInsets) -> Self {
+    final func titleEdgeInsets(_ titleEdgeInsets: UIEdgeInsets) -> Self {
         self.titleEdgeInsets = titleEdgeInsets
 
         return self
     }
 
     /// ChainableSwift
-    final func reversesTitleShadowWhenHighlighted(reversesTitleShadowWhenHighlighted: Bool) -> Self {
+    final func reversesTitleShadowWhenHighlighted(_ reversesTitleShadowWhenHighlighted: Bool) -> Self {
         self.reversesTitleShadowWhenHighlighted = reversesTitleShadowWhenHighlighted
 
         return self
     }
 
     /// ChainableSwift
-    final func imageEdgeInsets(imageEdgeInsets: UIEdgeInsets) -> Self {
+    final func imageEdgeInsets(_ imageEdgeInsets: UIEdgeInsets) -> Self {
         self.imageEdgeInsets = imageEdgeInsets
 
         return self
     }
 
     /// ChainableSwift
-    final func adjustsImageWhenHighlighted(adjustsImageWhenHighlighted: Bool) -> Self {
+    final func adjustsImageWhenHighlighted(_ adjustsImageWhenHighlighted: Bool) -> Self {
         self.adjustsImageWhenHighlighted = adjustsImageWhenHighlighted
 
         return self
     }
 
     /// ChainableSwift
-    final func adjustsImageWhenDisabled(adjustsImageWhenDisabled: Bool) -> Self {
+    final func adjustsImageWhenDisabled(_ adjustsImageWhenDisabled: Bool) -> Self {
         self.adjustsImageWhenDisabled = adjustsImageWhenDisabled
 
         return self
     }
 
     /// ChainableSwift
-    final func showsTouchWhenHighlighted(showsTouchWhenHighlighted: Bool) -> Self {
+    final func showsTouchWhenHighlighted(_ showsTouchWhenHighlighted: Bool) -> Self {
         self.showsTouchWhenHighlighted = showsTouchWhenHighlighted
 
         return self
     }
 
     /// ChainableSwift
-    final func title(title: String?, forState: UIControlState = .Normal) -> Self {
-        self.setTitle(title, forState: forState)
+    final func title(_ title: String?, forState: UIControlState = UIControlState()) -> Self {
+        self.setTitle(title, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func titleColor(titleColor: UIColor?, forState: UIControlState = .Normal) -> Self {
-        self.setTitleColor(titleColor, forState: forState)
+    final func titleColor(_ titleColor: UIColor?, forState: UIControlState = UIControlState()) -> Self {
+        self.setTitleColor(titleColor, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func titleShadowColor(titleShadowColor: UIColor?, forState: UIControlState = .Normal) -> Self {
-        self.setTitleShadowColor(titleShadowColor, forState: forState)
+    final func titleShadowColor(_ titleShadowColor: UIColor?, forState: UIControlState = UIControlState()) -> Self {
+        self.setTitleShadowColor(titleShadowColor, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func image(image: UIImage?, forState: UIControlState = .Normal) -> Self {
-        self.setImage(image, forState: forState)
+    final func image(_ image: UIImage?, forState: UIControlState = UIControlState()) -> Self {
+        self.setImage(image, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func backgroundImage(backgroundImage: UIImage?, forState: UIControlState = .Normal) -> Self {
-        self.setBackgroundImage(backgroundImage, forState: forState)
+    final func backgroundImage(_ backgroundImage: UIImage?, forState: UIControlState = UIControlState()) -> Self {
+        self.setBackgroundImage(backgroundImage, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func attributedTitle(attributedTitle: NSAttributedString?, forState: UIControlState = .Normal) -> Self {
-        self.setAttributedTitle(attributedTitle, forState: forState)
+    final func attributedTitle(_ attributedTitle: NSAttributedString?, forState: UIControlState = UIControlState()) -> Self {
+        self.setAttributedTitle(attributedTitle, for: forState)
 
         return self
     }
 
     /// ChainableSwift
-    final func font(font: UIFont) -> Self {
+    final func font(_ font: UIFont) -> Self {
         self.titleLabel?.font = font
 
         return self

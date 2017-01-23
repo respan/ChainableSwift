@@ -7,7 +7,7 @@
 //
 
 public extension NSAttributedString {
-    final func font(font: UIFont) -> NSAttributedString {
+    final func font(_ font: UIFont) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -15,7 +15,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSFontAttributeName, value: font)
     }
 
-    final func paragraphStyle(paragraphStyle: NSParagraphStyle) -> NSAttributedString {
+    final func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -23,7 +23,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSParagraphStyleAttributeName, value: paragraphStyle)
     }
 
-    final func color(color: UIColor) -> NSAttributedString {
+    final func color(_ color: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -31,7 +31,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSForegroundColorAttributeName, value: color)
     }
 
-    final func backgroundColor(backgroundColor: UIColor) -> NSAttributedString {
+    final func backgroundColor(_ backgroundColor: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -39,23 +39,23 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSBackgroundColorAttributeName, value: backgroundColor)
     }
 
-    final func kern(kern: CGFloat) -> NSAttributedString {
+    final func kern(_ kern: CGFloat) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSKernAttributeName, value: kern)
+        return copy.addAttributeToWholeString(NSKernAttributeName, value: kern as AnyObject)
     }
 
-    final func strikethroughStyle(strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
+    final func strikethroughStyle(_ strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSStrikethroughStyleAttributeName, value: strikethroughStyle.rawValue)
+        return copy.addAttributeToWholeString(NSStrikethroughStyleAttributeName, value: strikethroughStyle.rawValue as AnyObject)
     }
 
-    final func strikethroughColor(color: UIColor) -> NSAttributedString {
+    final func strikethroughColor(_ color: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -63,15 +63,15 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSStrikethroughColorAttributeName, value: color)
     }
 
-    final func underlineStyle(underlineStyle: NSUnderlineStyle) -> NSAttributedString {
+    final func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSUnderlineStyleAttributeName, value: underlineStyle.rawValue)
+        return copy.addAttributeToWholeString(NSUnderlineStyleAttributeName, value: underlineStyle.rawValue as AnyObject)
     }
 
-    final func underlineColor(underlineColor: UIColor) -> NSAttributedString {
+    final func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -81,8 +81,8 @@ public extension NSAttributedString {
 }
 
 extension NSMutableAttributedString {
-    private final func addAttributeToWholeString(name: String, value: AnyObject) -> NSMutableAttributedString {
-        let range = (string as NSString).rangeOfString(string)
+    fileprivate final func addAttributeToWholeString(_ name: String, value: AnyObject) -> NSMutableAttributedString {
+        let range = (string as NSString).range(of: string)
         addAttribute(name, value: value, range: range)
 
         return self
