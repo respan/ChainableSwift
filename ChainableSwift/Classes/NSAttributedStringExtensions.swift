@@ -44,7 +44,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSKernAttributeName, value: kern as AnyObject)
+        return copy.addAttributeToWholeString(NSKernAttributeName, value: kern)
     }
 
     @discardableResult final func strikethroughStyle(_ strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
@@ -52,7 +52,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSStrikethroughStyleAttributeName, value: strikethroughStyle.rawValue as AnyObject)
+        return copy.addAttributeToWholeString(NSStrikethroughStyleAttributeName, value: strikethroughStyle.rawValue)
     }
 
     @discardableResult final func strikethroughColor(_ color: UIColor) -> NSAttributedString {
@@ -68,7 +68,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSUnderlineStyleAttributeName, value: underlineStyle.rawValue as AnyObject)
+        return copy.addAttributeToWholeString(NSUnderlineStyleAttributeName, value: underlineStyle.rawValue)
     }
 
     @discardableResult final func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
@@ -81,7 +81,7 @@ public extension NSAttributedString {
 }
 
 extension NSMutableAttributedString {
-    fileprivate final func addAttributeToWholeString(_ name: String, value: AnyObject) -> NSMutableAttributedString {
+    fileprivate final func addAttributeToWholeString(_ name: String, value: Any) -> NSMutableAttributedString {
         let range = (string as NSString).range(of: string)
         addAttribute(name, value: value, range: range)
 

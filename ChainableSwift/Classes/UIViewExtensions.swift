@@ -311,7 +311,7 @@ public extension UIView {
     }
 
     /// ChainableSwift
-    @discardableResult final func layerCompositingFilter(_ compositingFilter: AnyObject?) -> Self {
+    @discardableResult final func layerCompositingFilter(_ compositingFilter: Any?) -> Self {
         self.layer.compositingFilter = compositingFilter
 
         return self

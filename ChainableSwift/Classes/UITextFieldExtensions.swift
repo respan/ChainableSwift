@@ -43,7 +43,7 @@ public extension UITextField {
     }
 
     /// ChainableSwift
-    @discardableResult final func defaultTextAttributes(_ defaultTextAttributes: [String : AnyObject]) -> Self {
+    @discardableResult final func defaultTextAttributes(_ defaultTextAttributes: [String : Any]) -> Self {
         self.defaultTextAttributes = defaultTextAttributes
 
         return self
@@ -99,7 +99,7 @@ public extension UITextField {
     }
 
     /// ChainableSwift
-    @discardableResult final func typingAttributes(_ typingAttributes: [String : AnyObject]?) -> Self {
+    @discardableResult final func typingAttributes(_ typingAttributes: [String : Any]?) -> Self {
         self.typingAttributes = typingAttributes
 
         return self

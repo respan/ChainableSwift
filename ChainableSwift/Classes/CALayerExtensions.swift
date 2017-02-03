@@ -148,7 +148,7 @@ public extension CALayer {
     }
 
     /// ChainableSwift
-    @discardableResult final func compositingFilter(_ compositingFilter: AnyObject?) -> Self {
+    @discardableResult final func compositingFilter(_ compositingFilter: Any?) -> Self {
         self.compositingFilter = compositingFilter
 
         return self

@@ -43,7 +43,7 @@ public extension UIControl {
     }
 
     /// ChainableSwift
-    func target(_ target: AnyObject?, action: Selector, forControlEvents controlEvents: UIControlEvents) -> Self {
+    func target(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self {
         self.addTarget(target, action: action, for: controlEvents)
 
         return self
