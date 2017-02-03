@@ -8,168 +8,168 @@
 
 public extension UITextView {
     /// ChainableSwift
-    final func text(_ text: String!) -> Self {
+    @discardableResult final func text(_ text: String!) -> Self {
         self.text = text
 
         return self
     }
 
     /// ChainableSwift
-    final func font(_ font: UIFont?) -> Self {
+    @discardableResult final func font(_ font: UIFont?) -> Self {
         self.font = font
 
         return self
     }
 
     /// ChainableSwift
-    final func textColor(_ textColor: UIColor?) -> Self {
+    @discardableResult final func textColor(_ textColor: UIColor?) -> Self {
         self.textColor = textColor
 
         return self
     }
 
     /// ChainableSwift
-    final func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+    @discardableResult final func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
 
         return self
     }
 
     /// ChainableSwift
-    final func selectedRange(_ selectedRange: NSRange) -> Self {
+    @discardableResult final func selectedRange(_ selectedRange: NSRange) -> Self {
         self.selectedRange = selectedRange
 
         return self
     }
 
     /// ChainableSwift
-    final func editable(_ editable: Bool) -> Self {
+    @discardableResult final func editable(_ editable: Bool) -> Self {
         self.isEditable = editable
 
         return self
     }
 
     /// ChainableSwift
-    final func selectable(_ selectable: Bool) -> Self {
+    @discardableResult final func selectable(_ selectable: Bool) -> Self {
         self.isSelectable = selectable
 
         return self
     }
 
     /// ChainableSwift
-    final func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
+    @discardableResult final func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
         self.dataDetectorTypes = dataDetectorTypes
 
         return self
     }
 
     /// ChainableSwift
-    final func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
+    @discardableResult final func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
         self.allowsEditingTextAttributes = allowsEditingTextAttributes
 
         return self
     }
 
     /// ChainableSwift
-    final func attributedText(_ attributedText: NSAttributedString!) -> Self {
+    @discardableResult final func attributedText(_ attributedText: NSAttributedString!) -> Self {
         self.attributedText = attributedText
 
         return self
     }
 
     /// ChainableSwift
-    final func typingAttributes(_ typingAttributes: [String : AnyObject]) -> Self {
+    @discardableResult final func typingAttributes(_ typingAttributes: [String : AnyObject]) -> Self {
         self.typingAttributes = typingAttributes
 
         return self
     }
 
     /// ChainableSwift
-    final func inputView(_ inputView: UIView?) -> Self {
+    @discardableResult final func inputView(_ inputView: UIView?) -> Self {
         self.inputView = inputView
 
         return self
     }
 
     /// ChainableSwift
-    final func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
+    @discardableResult final func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
         self.inputAccessoryView = inputAccessoryView
 
         return self
     }
 
     /// ChainableSwift
-    final func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
+    @discardableResult final func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
         self.clearsOnInsertion = clearsOnInsertion
         
         return self
     }
     
     /// ChainableSwift
-    final func textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
+    @discardableResult final func textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
         self.textContainerInset = textContainerInset
         
         return self
     }
     
     /// ChainableSwift
-    final func linkTextAttributes(_ linkTextAttributes: [String : AnyObject]!) -> Self {
+    @discardableResult final func linkTextAttributes(_ linkTextAttributes: [String : AnyObject]!) -> Self {
         self.linkTextAttributes = linkTextAttributes
         
         return self
     }
 
     /// ChainableSwift
-    final func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
+    @discardableResult final func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
         self.autocapitalizationType = autocapitalizationType
 
         return self
     }
 
     /// ChainableSwift
-    final func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
+    @discardableResult final func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
         self.autocorrectionType = autocorrectionType
 
         return self
     }
 
     /// ChainableSwift
-    final func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
+    @discardableResult final func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
         self.spellCheckingType = spellCheckingType
 
         return self
     }
 
     /// ChainableSwift
-    final func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
+    @discardableResult final func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
         self.keyboardType = keyboardType
 
         return self
     }
 
     /// ChainableSwift
-    final func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
+    @discardableResult final func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
         self.keyboardAppearance = keyboardAppearance
 
         return self
     }
 
     /// ChainableSwift
-    final func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
+    @discardableResult final func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
         self.returnKeyType = returnKeyType
 
         return self
     }
 
     /// ChainableSwift
-    final func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
+    @discardableResult final func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
         self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
 
         return self
     }
 
     /// ChainableSwift
-    final func secureTextEntry(_ secureTextEntry: Bool) -> Self {
+    @discardableResult final func secureTextEntry(_ secureTextEntry: Bool) -> Self {
         self.isSecureTextEntry = secureTextEntry
 
         return self

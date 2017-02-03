@@ -7,7 +7,7 @@
 //
 
 public extension NSAttributedString {
-    final func font(_ font: UIFont) -> NSAttributedString {
+    @discardableResult final func font(_ font: UIFont) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -15,7 +15,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSFontAttributeName, value: font)
     }
 
-    final func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> NSAttributedString {
+    @discardableResult final func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -23,7 +23,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSParagraphStyleAttributeName, value: paragraphStyle)
     }
 
-    final func color(_ color: UIColor) -> NSAttributedString {
+    @discardableResult final func color(_ color: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -31,7 +31,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSForegroundColorAttributeName, value: color)
     }
 
-    final func backgroundColor(_ backgroundColor: UIColor) -> NSAttributedString {
+    @discardableResult final func backgroundColor(_ backgroundColor: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -39,7 +39,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSBackgroundColorAttributeName, value: backgroundColor)
     }
 
-    final func kern(_ kern: CGFloat) -> NSAttributedString {
+    @discardableResult final func kern(_ kern: CGFloat) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -47,7 +47,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSKernAttributeName, value: kern as AnyObject)
     }
 
-    final func strikethroughStyle(_ strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
+    @discardableResult final func strikethroughStyle(_ strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -55,7 +55,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSStrikethroughStyleAttributeName, value: strikethroughStyle.rawValue as AnyObject)
     }
 
-    final func strikethroughColor(_ color: UIColor) -> NSAttributedString {
+    @discardableResult final func strikethroughColor(_ color: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -63,7 +63,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSStrikethroughColorAttributeName, value: color)
     }
 
-    final func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> NSAttributedString {
+    @discardableResult final func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }
@@ -71,7 +71,7 @@ public extension NSAttributedString {
         return copy.addAttributeToWholeString(NSUnderlineStyleAttributeName, value: underlineStyle.rawValue as AnyObject)
     }
 
-    final func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
+    @discardableResult final func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
         guard let copy = mutableCopy() as? NSMutableAttributedString else {
             return self
         }

@@ -1,5 +1,5 @@
 PODS:
-  - ChainableSwift (0.5.2)
+  - ChainableSwift (0.5.3)
   - Nimble (5.1.1)
   - PureLayout (3.0.2)
   - Quick (1.0.0)
@@ -12,10 +12,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ChainableSwift:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  ChainableSwift: 43c0f35f070e3aab1c2846a0c0293308ff67d386
+  ChainableSwift: be3cf7c1757121d059bb3039ec8f495a1f65e89e
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
