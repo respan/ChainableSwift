@@ -13,10 +13,10 @@ Because you can write this:
 ```swift
 let label = UILabel()
                 .text("My awesome title")
-                .textColor(.whiteColor())
-                .backgroundColor(.blackColor())
-                .textAlignment(.Center)
-                .font(.boldSystemFontOfSize(17))
+                .textColor(.white)
+                .backgroundColor(.black)
+                .textAlignment(.center)
+                .font(.boldSystemFont(ofSize: 17))
                 .layerCornerRadius(2)
                 .clipsToBounds(true)
 ```
@@ -27,10 +27,10 @@ instead of this:
 let label = UILabel()
 
 label.text = "My awesome title"
-label.textColor = .whiteColor()
-label.backgroundColor = .blackColor()
-label.textAlignment = .Center
-label.font = .boldSystemFontOfSize(17)
+label.textColor = .white
+label.backgroundColor = .black
+label.textAlignment = .center
+label.font = .boldSystemFont(ofSize: 17)
 label.layer.cornerRadius = 2
 label.clipsToBounds = true
 ```
@@ -39,10 +39,10 @@ The awesome thing is, you can thin your `viewDidLoad` or `init` methods:
 
 ```swift
 class MyIntroView: UIView {
-    let coverView = UIView().backgroundColor(.redColor())
+    let coverView = UIView().backgroundColor(.red)
     
-    let titleLabel = UILabel().font(.boldSystemFontOfSize(17))
-    let subTitleLabel = UILabel().font(.systemFontOfSize(12)).textColor(.grayColor())
+    let titleLabel = UILabel().font(.boldSystemFont(ofSize: 17))
+    let subTitleLabel = UILabel().font(.systemFont(ofSize: 12)).textColor(.gray)
 
     init() {
         super.init(frame: CGRect.zero)
