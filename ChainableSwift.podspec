@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ChainableSwift"
-  s.version          = "0.5.5"
+  s.version          = "0.6.0"
   s.summary          = "Chainable standart library 🔗"
   s.description      = "Easy to write and read chains of methods for UIView, UILabel, UIControl, UIButton, NSAttributedString, CALayer, etc. Work in progress."
 
