@@ -12,7 +12,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.font.rawValue, value: font)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.font.rawValue, value: font)
     }
 
     @discardableResult final func paragraphStyle(_ paragraphStyle: NSParagraphStyle) -> NSAttributedString {
@@ -20,7 +20,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.paragraphStyle.rawValue, value: paragraphStyle)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.paragraphStyle.rawValue, value: paragraphStyle)
     }
 
     @discardableResult final func color(_ color: UIColor) -> NSAttributedString {
@@ -28,7 +28,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.foregroundColor.rawValue, value: color)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.foregroundColor.rawValue, value: color)
     }
 
     @discardableResult final func backgroundColor(_ backgroundColor: UIColor) -> NSAttributedString {
@@ -36,7 +36,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.backgroundColor.rawValue, value: backgroundColor)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.backgroundColor.rawValue, value: backgroundColor)
     }
 
     @discardableResult final func kern(_ kern: CGFloat) -> NSAttributedString {
@@ -44,7 +44,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.kern.rawValue, value: kern)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.kern.rawValue, value: kern)
     }
 
     @discardableResult final func strikethroughStyle(_ strikethroughStyle: NSUnderlineStyle) -> NSAttributedString {
@@ -52,7 +52,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.strikethroughStyle.rawValue, value: strikethroughStyle.rawValue)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.strikethroughStyle.rawValue, value: strikethroughStyle.rawValue)
     }
 
     @discardableResult final func strikethroughColor(_ color: UIColor) -> NSAttributedString {
@@ -60,7 +60,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.strikethroughColor.rawValue, value: color)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.strikethroughColor.rawValue, value: color)
     }
 
     @discardableResult final func underlineStyle(_ underlineStyle: NSUnderlineStyle) -> NSAttributedString {
@@ -68,7 +68,7 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.underlineStyle.rawValue, value: underlineStyle.rawValue)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.underlineStyle.rawValue, value: underlineStyle.rawValue)
     }
 
     @discardableResult final func underlineColor(_ underlineColor: UIColor) -> NSAttributedString {
@@ -76,14 +76,14 @@ public extension NSAttributedString {
             return self
         }
 
-        return copy.addAttributeToWholeString(NSAttributedStringKey.underlineColor.rawValue, value: underlineColor)
+        return copy.addAttributeToWholeString(NSAttributedString.Key.underlineColor.rawValue, value: underlineColor)
     }
 }
 
 extension NSMutableAttributedString {
     fileprivate final func addAttributeToWholeString(_ name: String, value: Any) -> NSMutableAttributedString {
         let range = (string as NSString).range(of: string)
-        addAttribute(NSAttributedStringKey(rawValue: name), value: value, range: range)
+        addAttribute(NSAttributedString.Key(rawValue: name), value: value, range: range)
 
         return self
     }

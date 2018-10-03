@@ -78,7 +78,7 @@ public extension UITextView {
     }
 
     /// ChainableSwift
-    @discardableResult final func typingAttributes(_ typingAttributes: [String : Any]) -> Self {
+    @discardableResult final func typingAttributes(_ typingAttributes: [NSAttributedString.Key : Any]) -> Self {
         self.typingAttributes = typingAttributes
 
         return self
@@ -113,7 +113,7 @@ public extension UITextView {
     }
     
     /// ChainableSwift
-    @discardableResult final func linkTextAttributes(_ linkTextAttributes: [String : Any]!) -> Self {
+    @discardableResult final func linkTextAttributes(_ linkTextAttributes: [NSAttributedString.Key : Any]!) -> Self {
         self.linkTextAttributes = linkTextAttributes
         
         return self

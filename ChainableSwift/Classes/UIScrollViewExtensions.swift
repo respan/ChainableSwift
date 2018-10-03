@@ -92,7 +92,7 @@ public extension UIScrollView {
     }
 
     /// ChainableSwift
-    @discardableResult final func indicatorStyle(_ indicatorStyle: UIScrollViewIndicatorStyle) -> Self {
+    @discardableResult final func indicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle) -> Self {
         self.indicatorStyle = indicatorStyle
 
         return self
@@ -100,7 +100,7 @@ public extension UIScrollView {
 
     /// ChainableSwift
     @discardableResult final func decelerationRate(_ decelerationRate: CGFloat) -> Self {
-        self.decelerationRate = decelerationRate
+        self.decelerationRate = UIScrollView.DecelerationRate(rawValue: decelerationRate)
 
         return self
     }
@@ -155,7 +155,7 @@ public extension UIScrollView {
     }
 
     /// ChainableSwift
-    @discardableResult final func keyboardDismissMode(_ keyboardDismissMode: UIScrollViewKeyboardDismissMode) -> Self {
+    @discardableResult final func keyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode) -> Self {
         self.keyboardDismissMode = keyboardDismissMode
 
         return self

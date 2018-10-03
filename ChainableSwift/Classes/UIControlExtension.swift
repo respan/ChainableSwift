@@ -29,21 +29,21 @@ public extension UIControl {
     }
 
     /// ChainableSwift
-    func contentVerticalAlignment(_ contentVerticalAlignment: UIControlContentVerticalAlignment) -> Self {
+    func contentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment) -> Self {
         self.contentVerticalAlignment = contentVerticalAlignment
 
         return self
     }
 
     /// ChainableSwift
-    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> Self {
+    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment) -> Self {
         self.contentHorizontalAlignment = contentHorizontalAlignment
 
         return self
     }
 
     /// ChainableSwift
-    func target(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self {
+    func target(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self {
         self.addTarget(target, action: action, for: controlEvents)
 
         return self
