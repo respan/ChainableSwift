@@ -78,7 +78,7 @@ public extension UIView {
     }
 
     /// ChainableSwift
-    func autoresizingMask(_ autoresizingMask: UIViewAutoresizing) -> Self {
+    func autoresizingMask(_ autoresizingMask: UIView.AutoresizingMask) -> Self {
         self.autoresizingMask = autoresizingMask
 
         return self
@@ -120,7 +120,7 @@ public extension UIView {
     }
 
     /// ChainableSwift
-    func contentMode(_ contentMode: UIViewContentMode) -> Self {
+    func contentMode(_ contentMode: UIView.ContentMode) -> Self {
         self.contentMode = contentMode
 
         return self
@@ -141,7 +141,7 @@ public extension UIView {
     }
 
     /// ChainableSwift
-    func tintAdjustmentMode(_ tintAdjustmentMode: UIViewTintAdjustmentMode) -> Self {
+    func tintAdjustmentMode(_ tintAdjustmentMode: UIView.TintAdjustmentMode) -> Self {
         self.tintAdjustmentMode = tintAdjustmentMode
 
         return self

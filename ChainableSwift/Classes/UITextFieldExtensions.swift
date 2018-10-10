@@ -36,14 +36,14 @@ public extension UITextField {
     }
 
     /// ChainableSwift
-    @discardableResult final func borderStyle(_ borderStyle: UITextBorderStyle) -> Self {
+    @discardableResult final func borderStyle(_ borderStyle: UITextField.BorderStyle) -> Self {
         self.borderStyle = borderStyle
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func defaultTextAttributes(_ defaultTextAttributes: [String : Any]) -> Self {
+    @discardableResult final func defaultTextAttributes(_ defaultTextAttributes: [NSAttributedString.Key : Any]) -> Self {
         self.defaultTextAttributes = defaultTextAttributes
 
         return self
@@ -99,14 +99,14 @@ public extension UITextField {
     }
 
     /// ChainableSwift
-    @discardableResult final func typingAttributes(_ typingAttributes: [String : Any]?) -> Self {
+    @discardableResult final func typingAttributes(_ typingAttributes: [NSAttributedString.Key : Any]?) -> Self {
         self.typingAttributes = typingAttributes
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func clearButtonMode(_ clearButtonMode: UITextFieldViewMode) -> Self {
+    @discardableResult final func clearButtonMode(_ clearButtonMode: UITextField.ViewMode) -> Self {
         self.clearButtonMode = clearButtonMode
 
         return self
@@ -120,7 +120,7 @@ public extension UITextField {
     }
 
     /// ChainableSwift
-    @discardableResult final func leftViewMode(_ leftViewMode: UITextFieldViewMode) -> Self {
+    @discardableResult final func leftViewMode(_ leftViewMode: UITextField.ViewMode) -> Self {
         self.leftViewMode = leftViewMode
 
         return self
@@ -134,7 +134,7 @@ public extension UITextField {
     }
     
     /// ChainableSwift
-    @discardableResult final func rightViewMode(_ rightViewMode: UITextFieldViewMode) -> Self {
+    @discardableResult final func rightViewMode(_ rightViewMode: UITextField.ViewMode) -> Self {
         self.rightViewMode = rightViewMode
         
         return self    

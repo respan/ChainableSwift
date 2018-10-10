@@ -57,42 +57,42 @@ public extension UIButton {
     }
 
     /// ChainableSwift
-    @discardableResult final func title(_ title: String?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func title(_ title: String?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setTitle(title, for: state)
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func titleColor(_ titleColor: UIColor?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func titleColor(_ titleColor: UIColor?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setTitleColor(titleColor, for: state)
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func titleShadowColor(_ titleShadowColor: UIColor?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func titleShadowColor(_ titleShadowColor: UIColor?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setTitleShadowColor(titleShadowColor, for: state)
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func image(_ image: UIImage?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func image(_ image: UIImage?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setImage(image, for: state)
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func backgroundImage(_ backgroundImage: UIImage?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func backgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setBackgroundImage(backgroundImage, for: state)
 
         return self
     }
 
     /// ChainableSwift
-    @discardableResult final func attributedTitle(_ attributedTitle: NSAttributedString?, for state: UIControlState = UIControlState()) -> Self {
+    @discardableResult final func attributedTitle(_ attributedTitle: NSAttributedString?, for state: UIControl.State = UIControl.State()) -> Self {
         self.setAttributedTitle(attributedTitle, for: state)
 
         return self
